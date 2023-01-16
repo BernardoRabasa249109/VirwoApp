@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">VirwoApp</string>
+    <string name="log_in">Log In</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="welcome">WELCOME</string>
+    <string name="error_login_credentials">invalid credentials, try again</string>
+    <string name="enter_a_valid_email">enter a valid email</string>
+    <string name="enter_a_valid_password">enter a valid password at least 8 characters</string>
+    <string name="create_new_account">CREATE NEW ACCOUNT</string>
+    <string name="user_name">user name</string>
+    <string name="enter_a_valid_user_name">enter a valid user name min 8 characters</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_link"><u>Sign up</u></string>
+    <string name="new_account_message">New account created please login</string>
+    <string name="take_picture">Take picture</string>
+    <string name="open_camera">Open camera</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        tools:context=".presentation.login.LoginActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/screen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            app:layout_constraintTop_toBottomOf="@+id/screen_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_email_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="4dp"
+            android:text="@string/enter_a_valid_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_edit_text"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp"
+            android:hint="@string/password"
+            app:layout_constraintTop_toBottomOf="@+id/error_email_message" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_password_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:layout_marginStart="4dp"
+            android:text="@string/enter_a_valid_password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit_text"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:text="@string/log_in"
+            app:layout_constraintTop_toBottomOf="@+id/error_password_message"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            tools:visibility="visible"
+            tools:text="Error message" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sign_in_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_700"
+            android:text="@string/sign_up_link"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
